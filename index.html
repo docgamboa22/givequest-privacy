@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — GiveQuest</title>
+<meta name="description" content="GiveQuest Privacy Policy. How GiveQuest collects, uses, and protects your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7ee;
+    --bg-elevated: #ffffff;
+    --ink: #0e1a2b;
+    --ink-soft: #2c3e54;
+    --ink-muted: #5f6f82;
+    --gold: #c8941b;
+    --gold-soft: #e8b94a;
+    --rule: #e6dec8;
+    --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+    --sans: 'Manrope', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(200, 148, 27, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 100%, rgba(14, 26, 43, 0.03) 0%, transparent 50%);
+  }
+
+  .wrap {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 5vw, 3rem) 6rem;
+  }
+
+  /* Masthead */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    font-variation-settings: "opsz" 12;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: inline-block;
+    transform: translateY(-1px);
+  }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.75rem, 7vw, 4.25rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-variation-settings: "opsz" 144;
+    margin-bottom: 1.25rem;
+  }
+
+  .effective {
+    font-size: 0.92rem;
+    color: var(--ink-muted);
+    font-weight: 500;
+  }
+
+  .effective strong {
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+
+  /* Lead paragraph */
+  .lead {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin-bottom: 3rem;
+    font-variation-settings: "opsz" 36;
+  }
+
+  .lead em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.65rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    font-variation-settings: "opsz" 36;
+  }
+
+  h2 .num {
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    min-width: 1.5rem;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.005em;
+  }
+
+  p {
+    color: var(--ink-soft);
+    margin-bottom: 1rem;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    color: var(--ink-soft);
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--gold);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.15s ease;
+  }
+
+  a:hover { color: var(--ink); }
+
+  /* Placeholder callout */
+  .placeholder {
+    background: #fef9e8;
+    border-left: 3px solid var(--gold);
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+    border-radius: 2px;
+    font-size: 0.94rem;
+  }
+
+  .placeholder-label {
+    display: block;
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .placeholder p { color: var(--ink-soft); margin-bottom: 0.6rem; }
+  .placeholder p:last-child { margin-bottom: 0; }
+
+  /* Don't-collect callout */
+  .negative-list {
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 1.5rem 1.75rem;
+    margin: 1rem 0;
+  }
+
+  .negative-list h3 {
+    margin-top: 0;
+    color: var(--ink);
+  }
+
+  /* Section divider */
+  .divider {
+    text-align: center;
+    margin: 4rem 0 3rem;
+    color: var(--gold);
+    font-size: 1rem;
+    letter-spacing: 0.5em;
+    user-select: none;
+  }
+
+  /* Contact card */
+  .contact-card {
+    background: var(--ink);
+    color: #f5e9c8;
+    padding: 2.25rem 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+
+  .contact-card h2 {
+    color: #fff;
+  }
+
+  .contact-card h2 .num {
+    color: var(--gold-soft);
+  }
+
+  .contact-card p {
+    color: #cbd6e2;
+  }
+
+  .contact-card strong {
+    color: #fff;
+  }
+
+  .contact-card a {
+    color: var(--gold-soft);
+  }
+
+  .contact-card a:hover {
+    color: #fff;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Print */
+  @media print {
+    body { background: white; }
+    .placeholder { background: #f9f9f9; }
+    .contact-card { background: white; color: var(--ink); border: 2px solid var(--ink); }
+    .contact-card h2, .contact-card strong { color: var(--ink); }
+    .contact-card p { color: var(--ink-soft); }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="masthead">
+    <a href="#" class="brand"><span class="brand-mark"></span>GiveQuest</a>
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective"><strong>Effective Date:</strong> [INSERT DATE — e.g., December 1, 2026]</p>
+  </header>
+
+  <p class="lead">
+    GiveQuest is built on a simple idea: <em>play games, raise money for causes that matter</em>.
+    To honor that, we collect as little personal information as possible — and never sell it.
+  </p>
+
+  <section>
+    <h2><span class="num">01</span>Who We Are</h2>
+    <p>
+      GiveQuest ("the App," "we," "our") is developed and operated by <strong>[Your Full Legal Name]</strong>,
+      an independent sole developer based in California, United States. This Privacy Policy explains how
+      information is handled when you use the GiveQuest mobile application on iOS or Android.
+    </p>
+    <p>
+      By using GiveQuest, you agree to the practices described below.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Information We Collect</h2>
+    <p>GiveQuest does not require an account. You don't sign up, log in, or give us your name or email.</p>
+
+    <h3>Information you provide</h3>
+    <ul>
+      <li><strong>Charity selection.</strong> When you choose a charity to support, your selection is stored on your device and associated with an anonymous identifier on our servers so we can track aggregate donations to each charity.</li>
+      <li><strong>In-app purchases.</strong> When you make a purchase, Apple (or Google Play) processes the transaction. We receive only a transaction identifier, the country of purchase, and confirmation of what was purchased. We never receive your name, email, address, or payment card details.</li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul>
+      <li><strong>Gameplay data:</strong> scores, plays per day, level progression, and donation totals — tied to an anonymous device identifier, not to you personally.</li>
+      <li><strong>Basic technical data:</strong> device type, operating system version, and crash diagnostics, used to keep the App running smoothly.</li>
+    </ul>
+
+    <div class="negative-list">
+      <h3>What we do <em>not</em> collect</h3>
+      <ul>
+        <li>Your name, email address, or phone number</li>
+        <li>Payment card or banking information (handled exclusively by Apple or Google)</li>
+        <li>Location data</li>
+        <li>Contacts, photos, or other on-device content</li>
+        <li>Browsing history or activity in other apps</li>
+        <li>Advertising identifiers — GiveQuest does not display third-party ads</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>How We Use Information</h2>
+    <p>We use the limited information we collect to:</p>
+    <ul>
+      <li>Run the GiveQuest experience — track your scores, plays, and chosen charity</li>
+      <li>Process and verify in-app purchases</li>
+      <li>Calculate and disburse donations to the charity you select</li>
+      <li>Display aggregate community impact (e.g., "raised across 14 charities by 3,247 players")</li>
+      <li>Improve performance, fix bugs, and prevent fraud</li>
+      <li>Comply with applicable legal obligations</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>How Donations Are Disbursed</h2>
+    <p>
+      A portion of in-app purchase revenue (currently <strong>10%</strong>) is donated to the charity you select.
+    </p>
+
+    <div class="placeholder">
+      <span class="placeholder-label">⚠ Confirm before publishing — pick one</span>
+      <p><strong>Option A — Direct disbursement.</strong> [Your Full Legal Name] disburses donations directly to each charity. Only aggregate donation totals are shared with recipient charities; your individual identity, purchases, and gameplay are never disclosed.</p>
+      <p><strong>Option B — Via partner.</strong> Donations are processed and disbursed through <strong>[Partner Name — e.g., Pledge.to, PayPal Giving Fund, Benevity]</strong>, a registered charitable disbursement service. We share aggregate amounts and selected charity information with the partner; we do not share your identity. Their privacy policy: <a href="#">[Partner Privacy URL]</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Sharing Your Information</h2>
+    <p>
+      <strong>We do not sell, rent, or share your information with advertisers or marketers.</strong>
+      We share information only with:
+    </p>
+    <ul>
+      <li><strong>Apple Inc. and Google LLC</strong> — for in-app purchase processing, governed by their respective privacy policies</li>
+      <li><strong>Charity disbursement partner</strong> — only if applicable (see Section 04)</li>
+      <li><strong>Legal authorities</strong> — only when required by valid legal process</li>
+      <li><strong>Cloud infrastructure providers</strong> — used to host anonymized aggregate data; bound by data-processing agreements</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Data Retention</h2>
+    <ul>
+      <li>Local device data (scores, charity selection) remains on your device until you delete the App</li>
+      <li>Anonymized aggregate data may be retained indefinitely for impact reporting</li>
+      <li>In-app purchase records are retained for up to <strong>seven years</strong> for tax, audit, and compliance purposes</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Children's Privacy</h2>
+    <p>
+      GiveQuest is rated 4+ on the App Store, which means it contains no objectionable content and is appropriate for all ages. The App is <strong>not directed to children under 13</strong> and does not knowingly collect personal information from children. Because we don't collect personal information from anyone, this is doubly true.
+    </p>
+    <p>
+      If you are a parent or guardian and believe your child has somehow provided personal information through the App, please contact us at <a href="mailto:chiefcraftstudio@gmail.com">chiefcraftstudio@gmail.com</a> and we will promptly delete any such information.
+    </p>
+    <p>
+      In-app purchases require parental approval through Apple's <strong>Family Sharing</strong> and <strong>Ask to Buy</strong> features, or Google's equivalent parental controls. We strongly encourage parents to enable these tools.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Your Privacy Rights</h2>
+    <p>Depending on where you live, you may have rights under privacy laws like the California Consumer Privacy Act (CCPA) and the General Data Protection Regulation (GDPR), including:</p>
+    <ul>
+      <li>The right to know what data we hold about you</li>
+      <li>The right to request deletion of your data</li>
+      <li>The right to opt out of the sale of your data (we don't sell data, ever)</li>
+      <li>The right to non-discrimination for exercising any of these rights</li>
+    </ul>
+    <p>To exercise these rights, email <a href="mailto:chiefcraftstudio@gmail.com">chiefcraftstudio@gmail.com</a>. Because we don't tie data to your identity, we may need help locating any records — typically your anonymous device identifier from the App's Settings screen.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Data Security</h2>
+    <p>
+      We use reasonable technical and organizational safeguards to protect the limited information we collect.
+      Anonymized data is stored on secured cloud infrastructure with encryption in transit and at rest.
+      No system is perfectly secure, however, and we cannot guarantee absolute protection.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Material changes will be communicated through the App
+      or by updating the effective date at the top of this page. Continued use of GiveQuest after changes take effect
+      indicates acceptance of the revised policy.
+    </p>
+  </section>
+
+  <div class="divider">◆ ◆ ◆</div>
+
+  <section class="contact-card">
+    <h2><span class="num">11</span>Contact</h2>
+    <p>For privacy questions, data requests, or anything else covered by this policy:</p>
+    <p>
+      <strong>[Your Full Legal Name]</strong><br>
+      Developer of GiveQuest<br>
+      Email: <a href="mailto:chiefcraftstudio@gmail.com">chiefcraftstudio@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <span>© <span id="year">2026</span> GiveQuest. All rights reserved.</span>
+    <span>Last updated: [INSERT DATE]</span>
+  </footer>
+
+</main>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
